@@ -1,27 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+
+    --black-primary: #000000;
+    --black-secondary: #1E1F20;
+    --white-blur: #ffffffcc;
+    --white-primary: #FFFFFF;
+    --white-secondary: #F7F7F7;
+    --gray-primary: #707070;
+    --gray-secondary: #CCCCCC;
+    --blue: #1668E8;
+    --green: #C7F2AB;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* === Scroll Bar === */
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--black-secondary);
+    border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--purple-70);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--black-primary);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+nav .navbar-menu {
+    li {
+        border-color: #00000000;
+    }
+
+    li.active {
+        background-color: var(--blue);
+        color: var(--white-primary);
+    }
+}
+
+@media (width <=960px) {
+    nav .navbar-menu {
+        background: var(--white-primary);
+        position: absolute;
+        top: 70px;
+        right: 8px;
+        /* padding: 32px 52px 20px 52px; */
+        border: 1px solid var(--gray-secondary);
+        border-radius: 12px;
+        transition: all 0.4s ease;
+    }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
