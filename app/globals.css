@@ -72,3 +72,12 @@ nav .navbar-menu {
         text-wrap: balance;
     }
 }
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+.horizontal-scroll {
+    -ms-overflow-style: none;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+}

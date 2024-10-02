@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import BackgroundSvg from "../components/BackgroundSvg";
 import {formatDate} from "../components/FormatDate";
-import {cnn} from "../data/News";
+import {cnbc} from "../data/News";
 
 export default async function page() {
-    const dataCnn = await cnn();
+    const dataCnbc = await cnbc();
 
     return (
         <main className="">
@@ -18,10 +18,10 @@ export default async function page() {
                             <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
                         </svg>
                     </Link>
-                    <h1 className="text-4xl font-semibold text-center">CNN News</h1>
+                    <h1 className="text-4xl font-semibold text-center">CNBC News</h1>
                 </div>
                 <div className="flex flex-col gap-4">
-                    {dataCnn.map((data) => (
+                    {dataCnbc.map((data) => (
                         <div className="flex rounded-lg shadow-md bg-white-primary" key={data.title}>
                             <div className="basis-[40%]">
                                 <Image className="w-full h-full object-cover rounded-s-lg" src={data.image.large} width={500} height={500} alt="image" quality={100}/>

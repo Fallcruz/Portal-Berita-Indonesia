@@ -13,6 +13,12 @@ const nextConfig = {
                 hostname: 'blue.kumparan.com',
                 port: '',
                 pathname: '/**'
+            },
+            {
+                protocol: 'https',
+                hostname: 'awsimages.detik.net.id',
+                port: '',
+                pathname: '/**'
             }
         ]
     }
