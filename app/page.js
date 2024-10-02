@@ -34,7 +34,7 @@ export default async function Home() {
                                     <div className="w-full lg:h-[400px] h-[350px]">
                                         <Image className="w-full h-full object-cover object-top rounded-lg" src={data.image.large} width={500} height={500} alt="image" quality={100}/>
                                     </div>
-                                    <div className="absolute bg-white-blur backdrop-blur-sm start-0 bottom-0 rounded-b-lg">
+                                    <div className="absolute bg-white-blur backdrop-blur-md start-0 bottom-0 rounded-b-lg">
                                         <div className="flex flex-col lg:min-h-[160px] min-h-[140px] justify-between p-5 gap-3">
                                             <Link className="lg:text-xl text-sm font-bold hover:underline" href={data.link} target="_blank">{data.title}</Link>
                                             <p className="text-sm text-gray-700">{formatDate(data.isoDate)}</p>
@@ -54,7 +54,7 @@ export default async function Home() {
                                     <div className="w-full lg:h-[400px] h-[350px]">
                                         <Image className="w-full h-full object-cover object-top rounded-lg" src={data.image.large} width={500} height={500} alt="image" quality={100}/>
                                     </div>
-                                    <div className="absolute bg-white-blur backdrop-blur-sm start-0 bottom-0 rounded-b-lg">
+                                    <div className="absolute bg-white-blur backdrop-blur-md start-0 bottom-0 rounded-b-lg">
                                         <div className="flex flex-col lg:min-h-[160px] min-h-[140px] justify-between p-5 gap-3">
                                             <Link className="lg:text-xl text-sm font-bold hover:underline" href={data.link} target="_blank">{data.title}</Link>
                                             <p className="text-sm text-gray-700">{formatDate(data.isoDate)}</p>
@@ -74,7 +74,7 @@ export default async function Home() {
                                     <div className="w-full lg:h-[400px] h-[350px]">
                                         <Image className="w-full h-full object-cover object-top rounded-lg" src={data.image.large} width={500} height={500} alt="image" quality={100}/>
                                     </div>
-                                    <div className="absolute bg-white-blur backdrop-blur-sm start-0 bottom-0 rounded-b-lg">
+                                    <div className="absolute bg-white-blur backdrop-blur-md start-0 bottom-0 rounded-b-lg">
                                         <div className="flex flex-col lg:min-h-[160px] min-h-[140px] justify-between p-5 gap-3">
                                             <Link className="lg:text-xl text-sm font-bold hover:underline" href={data.link} target="_blank">{data.title}</Link>
                                             <p className="text-sm text-gray-700">{formatDate(data.isoDate)}</p>
