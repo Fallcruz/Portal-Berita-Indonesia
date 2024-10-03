@@ -19,6 +19,18 @@ const nextConfig = {
                 hostname: 'awsimages.detik.net.id',
                 port: '',
                 pathname: '/**'
+            },
+            {
+                protocol: 'https',
+                hostname: 'static.republika.co.id',
+                port: '',
+                pathname: '/**'
+            },
+            {
+                protocol: 'https',
+                hostname: 'img.antaranews.com',
+                port: '',
+                pathname: '/**'
             }
         ]
     }

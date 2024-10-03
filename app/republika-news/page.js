@@ -1,10 +1,10 @@
 import Link from "next/link";
 import BackgroundSvg from "../components/BackgroundSvg";
-import {cnn} from "../data/News";
+import {republika} from "../data/News";
 import {PageNewsCard} from "../components/NewsCard";
 
 export default async function page() {
-    const dataCnn = await cnn();
+    const dataRepublika = await republika();
 
     return (
         <main className="">
@@ -20,13 +20,13 @@ export default async function page() {
                         </Link>
                     </div>
                     <div className="basis-[60%]">
-                        <h1 className="lg:text-4xl text-2xl font-semibold text-center">CNN News</h1>
+                        <h1 className="lg:text-4xl text-2xl font-semibold text-center">Republika News</h1>
                     </div>
                     <div className="basis-[40px]"></div>
                 </div>
                 <div className="flex flex-col gap-4">
-                    {dataCnn.map((data) => (
-                        <PageNewsCard key={data.title} image={data.image.large} title={data.title} link={data.link} description={data.contentSnippet} date={data.isoDate} />
+                    {dataRepublika.map((data) => (
+                        <PageNewsCard key={data.title} image={data.image.small} title={data.title} link={data.link} description={data.description} date={data.isoDate} />
                     ))}
                 </div>
             </div>
